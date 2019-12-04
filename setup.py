@@ -37,13 +37,13 @@ def run_setup(packages, install_requires, extras_require):
             'Programming Language :: Python :: 3',
             'License :: Public Domain'
         ],
-        # entry_points={
-        #     'console_scripts': [
-        #         'nestor-gui = ui:main',
-        #         'nestor-dash = dash:main',
-        #         # 'nestor-serve = nestor.dash.plotserve:main'
-        #     ],
-        # },
+        entry_points={
+            'console_scripts': [
+                # 'nestor-gui = ui:main',
+                'nestor-dash = dash:main',
+                # 'nestor-serve = nestor.dash.plotserve:main'
+            ],
+        },
         install_requires=install_requires,
         extras_require=extras_require,
         include_package_data=True,
@@ -65,9 +65,11 @@ def get_reqs(name):
 
 install_requires = get_reqs('defaults')
 extras_require = {
+    'dash': get_reqs('dash'),
     'docs': get_reqs('docs'),
 }
 
-extras_require['all'] = extras_require['docs']
+extras_require['all'] = extras_require['dash'] +\
+                        extras_require['docs']
 
 run_setup(packages, install_requires, extras_require)

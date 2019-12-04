@@ -1,3 +1,7 @@
 include *.md *.rst
 include requirements/*.txt
 include version.py
+
+include dash/templates/*.html
+include dash/templates/includes/*.html
+include dash/static/*
