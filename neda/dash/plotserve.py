@@ -9,7 +9,7 @@ import holoviews as hv
 from tornado.ioloop import IOLoop
 from pathlib import Path
 import sys, urllib, nestor
-from nestor.tagplots import TagPlot
+from neda.tagplots import TagPlot
 from itertools import product
 
 nestorParams = nestor.CFG
@@ -49,11 +49,11 @@ def serve_bokeh_tags(hdfstore):
         }
 
     }, port=5006, allow_websocket_origin=[
-        "127.0.0.1:5000", 
-        "localhost:5000", 
-        "localhost:5006", 
-        "0.0.0.0:5000", 
-        "0.0.0.0:5006"                                     
+        "127.0.0.1:5000",
+        "localhost:5000",
+        "localhost:5006",
+        "0.0.0.0:5000",
+        "0.0.0.0:5006"
     ])
     server.start()
     # server.show('/')

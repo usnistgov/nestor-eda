@@ -6,11 +6,9 @@ import os, os.path, urllib
 from pathlib import Path
 from bokeh.client import pull_session
 from bokeh.embed import server_session
-from flask import Flask, flash, request, redirect, url_for, render_template
+from flask import Flask, flash, request, redirect, render_template
 from werkzeug.utils import secure_filename
-from flask import send_from_directory
-import io
-import base64
+
 hv.extension('bokeh')
 
 app_location = Path(__file__).parent
@@ -28,7 +26,7 @@ ALLOWED_EXTENSIONS = set(['csv', 'h5'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 FILES = []
 
-from dash.models import DataModel
+from neda.dash.models import DataModel
 data_model = DataModel()
 
 hostname='localhost'
@@ -92,7 +90,6 @@ def upload_file():
             # return render_template('upload.html', filename=FILES)
     return render_template('upload.html', filename=FILES)
 
-from flask import send_from_directory
 
 # locally creates a page
 @app.route('/about')
