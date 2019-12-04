@@ -1,0 +1,8 @@
+nist-nestor>=0.3
+numpy>=1.14.2
+pandas>=0.22.0
+tables
+bokeh
+holoviews>=1.10
+matplotlib>=2.2.2
+networkx>=2.0

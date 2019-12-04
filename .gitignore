@@ -1,0 +1,23 @@
+#   special folder cache or others
+**/__pycache__/
+.idea/
+**/.ipynb_checkpoints
+
+# data folder
+data/
+data/**
+build
+dist
+_build
+_static
+_templates
+_pdf
+.doctrees
+
+
+#   special file type
+**.pyc
+**.csv
+**.yaml
+**/reveal.js
+**.h5
