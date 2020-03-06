@@ -15,9 +15,8 @@ user-interaction to perform structured data extraction with minimal annotation t
    :caption: Table of Contents
 
    readme.rst
-   getting_started.rst
+   how_to_guide/dash_demonstration.rst
    examples.rst
-   how_to_guide/advanced.md
    source/nestor.rst
 
 

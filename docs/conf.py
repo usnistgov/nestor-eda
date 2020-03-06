@@ -16,7 +16,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('../'))
-sys.path.insert(0, os.path.abspath('../nestor'))
+sys.path.insert(0, os.path.abspath('../nestor_eda'))
 from version import get_version
 
 # At top on conf.py (with other import statements)
