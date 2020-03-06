@@ -26,7 +26,7 @@ ALLOWED_EXTENSIONS = set(['csv', 'h5'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 FILES = []
 
-from neda.dash.models import DataModel
+from nestor_eda.dash.models import DataModel
 data_model = DataModel()
 
 hostname='localhost'

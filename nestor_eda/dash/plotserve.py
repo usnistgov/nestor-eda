@@ -9,7 +9,7 @@ import holoviews as hv
 from tornado.ioloop import IOLoop
 from pathlib import Path
 import sys, urllib, nestor
-from neda.tagplots import TagPlot
+from nestor_eda.tagplots import TagPlot
 from itertools import product
 
 nestorParams = nestor.CFG

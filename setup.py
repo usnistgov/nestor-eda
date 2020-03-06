@@ -40,7 +40,7 @@ def run_setup(packages, install_requires, extras_require):
         entry_points={
             'console_scripts': [
                 # 'nestor-gui = ui:main',
-                'nestor-dash = neda.dash:main',
+                'nestor-dash = nestor_eda.dash:main',
                 # 'nestor-serve = nestor.dash.plotserve:main'
             ],
         },
